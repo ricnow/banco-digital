@@ -12,25 +12,25 @@ const items = [
     {
         key: String(Math.random()),
         img: img1,
-        label: 'Doações',
+        label: 'Recarga',
     },
 
     {
         key: String(Math.random()),
         img: img2,
-        label: 'Doações',
+        label: 'Uber',
     },
 
     {
         key: String(Math.random()),
         img: img3,
-        label: 'Doações',
+        label: 'Transporte',
     },
 
     {
         key: String(Math.random()),
         img: img4,
-        label: 'Doações',
+        label: 'TV',
     },
 
     {
@@ -42,13 +42,13 @@ const items = [
     {
         key: String(Math.random()),
         img: img6,
-        label: 'Doações',
+        label: 'Cód.Barra',
     },
 
     {
         key: String(Math.random()),
         img: img7,
-        label: 'Doações',
+        label: 'Pagar',
     },
 
 ] 
