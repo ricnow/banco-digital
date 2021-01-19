@@ -40,6 +40,7 @@ export default function Navigation(){
                         return (
                           <PayButton
                             onPress={() => navigation.navigate('Pay') }
+                            focused={focused}
                           />
                         );
                     }
