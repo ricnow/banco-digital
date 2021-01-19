@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feather } from '@expo/vector-icons';
+import { Feather, MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 import { 
     Container, 
     Header, 
@@ -16,6 +16,9 @@ import {
     Value,
     Divider,
     Date,
+    Action,
+    Option,
+    OptionLabel,
 } from './styles';
 import avatar from '../../images/avatar.png';
 
@@ -43,6 +46,17 @@ export default function Activities(){
                         <Feather name="lock" color="#fff" size={14} />
                         <Date>Há 2 dias</Date>
                     </Details>
+
+                    <Action>
+                        <Option>
+                            <MaterialCommunityIcons name='comment-outline' size={14} color='#fff'  />
+                            <OptionLabel>0</OptionLabel>
+                        </Option>
+                        <Option>
+                            <AntDesign name='hearto' size={14} color='#fff'  />
+                            <OptionLabel>0</OptionLabel>
+                        </Option>
+                    </Action>
                 </CardFooter>
             </Card>
         </Container>
