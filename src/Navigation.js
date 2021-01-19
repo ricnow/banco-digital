@@ -1,10 +1,12 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign, Ionicons } from '@expo/vector-icons'
+
+import PayButton from './components/PayButton';
 import HomeScreen from './screen/Home';
 import WalletScreen from './screen/Wallet';
 import PayScreen from './screen/Pay';
-import { color } from 'react-native-reanimated';
+
 
 //Contruindo as tabs embaixo
 const Tab = createBottomTabNavigator();
@@ -17,10 +19,6 @@ const icons = {
     Wallet: {
         lib: AntDesign,
         name: 'creditcard',
-    },
-    Pay: {
-        lib: AntDesign,
-        name: 'home',
     },
     Notification: {
         lib: Ionicons,
@@ -36,8 +34,15 @@ export default function Navigation(){
         //Dentro da Tab.Navigator vai todas as configurações para todas as tabs
         // Como se fosse em html aplicando estilo em css
         <Tab.Navigator
-            screenOptions={({ route }) => ({
-                tabBarIcon: ({ color, size }) => {
+            screenOptions={({ route, navigation }) => ({
+                tabBarIcon: ({ color, size, focused }) => {
+                    if (route.name == 'Pay') {
+                        return (
+                          <PayButton
+                            onPress={() => navigation.navigate('Pay') }
+                          />
+                        );
+                    }
                     const { lib: Icon, name } = icons[route.name];
                     return <Icon name={name} size={size} color={color} />;    
                 },
@@ -71,7 +76,7 @@ export default function Navigation(){
             name="Pay" 
             component={PayScreen} 
             options={{
-                title: 'Pagar'
+                title: ''
             }}
             />
             <Tab.Screen 
