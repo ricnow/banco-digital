@@ -1,5 +1,11 @@
 import React from 'react';
 import { Text } from 'react-native';
-export default function Home(){
-    return <Text>Wallet</Text>;
+import { Wrapper } from './styled';
+
+export default function Wallet(){
+    return (
+        <Wrapper>
+            <Text>Wallet</Text>
+        </Wrapper>
+    );
 }
