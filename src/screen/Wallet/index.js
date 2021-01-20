@@ -1,6 +1,7 @@
-import React from 'react';
-import { Feather, MaterialCommunityIcons,  } from '@expo/vector-icons';
+import React, { useState } from 'react';
+import { Feather, MaterialCommunityIcons, AntDesign,  } from '@expo/vector-icons';
 import { Switch } from 'react-native';
+import crediCard from '../../images/credit-card.png'
 
 import { 
     Wrapper, 
@@ -16,24 +17,54 @@ import {
     Actions,
     ActionLabel,
     UseBalance,
-    UseBalanceTitle, 
+    UseBalanceTitle,
+    PaymentMethods,
+    PaymentMethodsTitle,
+    Card,
+    CardBody,
+    CardDetails,
+    CardTitle,
+    CardInfo,
+    Img,
+    AddButton,
+    AddLabel,
+    UseTicketButton,
+    UseTicketLabel,
+    UseTicketContainer, 
 } from './styled';
 
 
 export default function Wallet(){
+
+    //Função para Setar a visibilidade do Saldo
+    const [isVisable, setIsVisible] = useState(true);
+    const [useBalance, setUseBalance] = useState(true);
+    function handleToggleVisibility(){
+        setIsVisible((prevState) => !prevState);
+    }
+    //Função para mudar o fundo quando não usar saldo
+    function handleToggleUseBallance(){
+        setUseBalance((prevState) => !prevState);
+    }
+    
     return (
-        <>
+       
         
         <Wrapper>
-            <Header colors={['#52E78C', '#1AB563']}>
+            <Header
+             colors={
+                 useBalance
+                 ? ['#52E78C', '#1AB563']
+                 : ['#D3D3D3', '#868686']
+             }>
                 <HeaderContainer>
                     <Title>Saldo PicPay</Title>
                     <BalanceContainer>
                         <Value>
-                            R$ <Bold>15.325,00</Bold>
+                            R$ <Bold>{isVisable ? '15.325,00' : '----'}</Bold>
                         </Value>
-                        <EyeButton>
-                            <Feather name='eye' size={28} color='#fff' />
+                        <EyeButton onPress={handleToggleVisibility}>
+                            <Feather name={isVisable ? 'eye-off' : 'eye'} size={28} color='#fff' />
                         </EyeButton>
                     </BalanceContainer>
                     <Info>
@@ -56,9 +87,49 @@ export default function Wallet(){
                 <UseBalanceTitle>
                     Use o saldo ao pagar
                 </UseBalanceTitle>
-                <Switch />
+                <Switch 
+                    value={useBalance}
+                    onValueChange={handleToggleUseBallance}
+                />
             </UseBalance>
+
+            <PaymentMethods>
+                <PaymentMethodsTitle>
+                    Formas de Pagamento
+                </PaymentMethodsTitle>
+          
+                <Card>
+                    <CardBody>
+                        <CardDetails>
+                            <CardTitle>
+                                Cadastre seu cartão 
+                            </CardTitle>
+                            <CardTitle>
+                                de crédito
+                            </CardTitle>
+                            <CardInfo>
+                                Cadastre um cartão de crédito para poder fazer pagamentos mesmo quando não tiver saldo no seu PicPay.    
+                            </CardInfo>
+                        </CardDetails>
+                        <Img source={crediCard} resizeMode='contain' />
+                    </CardBody>
+                    <AddButton>
+                        <AntDesign name='pluscircleo' size={30} color='#0DB060' />
+                        <AddLabel>
+                            Adicionar Cartão de Crédito
+                        </AddLabel>
+                    </AddButton>
+                </Card>
+                <UseTicketContainer>
+                    <UseTicketButton>
+                        <MaterialCommunityIcons name='ticket' size={20} color='#0DB060' />
+                        <UseTicketLabel>
+                            Usar Código Promocional
+                        </UseTicketLabel>
+                    </UseTicketButton>
+                </UseTicketContainer>
+            </PaymentMethods>
         </Wrapper>
-        </>
+        
     );
 }
