@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  background-color: #000;
+  background-color: #fff;
   flex: 1;
 `;
 
@@ -11,15 +11,16 @@ export const Header = styled.View`
   flex-direction: row;
   align-items:center;
   justify-content:space-between;
+  margin-top: 50px;
 `
 
 export const Input = styled.TextInput`
-  background-color: #000;
+  background-color: rgba(255,255,255,0.8);
   border: 2px solid gray;
   border-radius: 50px;
   width: 320px;
   padding: 2px 16px;
-  color: white;
+  color: #000;
 `
 
 export const ServicesContainer = styled.View`
@@ -32,6 +33,6 @@ export const ServicesHeader = styled.View`
 `
 
 export const Title = styled.Text`
-  color: #fff;
+  color: #000;
   font-size: 15px;
 `
