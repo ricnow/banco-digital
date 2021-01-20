@@ -10,7 +10,7 @@ import PayScreen from './screen/Pay';
 
 //Contruindo as tabs embaixo
 const Tab = createBottomTabNavigator();
-//Construindo os icons 
+//Construindo os icones 
 const icons = {
     Home: {
         lib: AntDesign,
@@ -34,7 +34,7 @@ export default function Navigation(){
         //Dentro da Tab.Navigator vai todas as configurações para todas as tabs
         // Como se fosse em html aplicando estilo em css
         <Tab.Navigator
-            initialRouteName="Wallet"
+            initialRouteName="Home"
             screenOptions={({ route, navigation }) => ({
                 tabBarIcon: ({ color, size, focused }) => {
                     if (route.name == 'Pay') {
