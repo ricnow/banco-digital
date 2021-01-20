@@ -32,6 +32,6 @@ export const ServicesHeader = styled.View`
 `
 
 export const Title = styled.Text`
-  color: white;
+  color: #fff;
   font-size: 15px;
 `

@@ -10,22 +10,23 @@ import {
     Title
 } from './styles.js';
 
-import ServiceComponent from '../../components/ServiceComponent';
+
 
 export default function Pay() {
   return (
-    <Container>
-      <Header>
-        <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e"/>
-        <Input placeholder="Quem você quer pagar?" />
-      </Header>
-      <ServicesContainer>
-        <ServicesHeader>
-          <Title>Serviços</Title>
-        </ServicesHeader>
-        <ServiceComponent />
-      </ServicesContainer>
-    </Container>
+
+        <Container>
+        <Header>
+            <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e"/>
+            <Input placeholder="Quem você quer pagar?" />
+        </Header>
+        <ServicesContainer>
+            <ServicesHeader>
+            <Title>Serviços</Title>
+            </ServicesHeader>
+            
+        </ServicesContainer>
+        </Container>
   );
 }
 

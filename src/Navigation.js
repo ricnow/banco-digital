@@ -34,7 +34,7 @@ export default function Navigation(){
         //Dentro da Tab.Navigator vai todas as configurações para todas as tabs
         // Como se fosse em html aplicando estilo em css
         <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName="Pay"
             screenOptions={({ route, navigation }) => ({
                 tabBarIcon: ({ color, size, focused }) => {
                     if (route.name == 'Pay') {
