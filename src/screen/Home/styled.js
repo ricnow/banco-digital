@@ -5,7 +5,9 @@ export const Wrapper = styled.SafeAreaView`
   flex: 1;
 `
 
-export const Container = styled.ScrollView``;
+export const Container = styled.ScrollView`
+    margin-top: 30px;
+`;
 
 export const Header = styled.View`
     height: 50px;
