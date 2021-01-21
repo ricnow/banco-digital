@@ -16,7 +16,7 @@ export const Header = styled.View`
 
 export const Input = styled.TextInput`
   background-color: rgba(255,255,255,0.8);
-  border: 2px solid gray;
+  border: 1px solid lightgray;
   border-radius: 50px;
   width: 320px;
   padding: 2px 16px;
