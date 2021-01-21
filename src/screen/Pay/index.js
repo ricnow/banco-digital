@@ -1,5 +1,6 @@
 import React from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import Payment from '../../components/Payment';
 
 import { 
     Container, 
@@ -23,9 +24,9 @@ export default function Pay() {
         <ServicesContainer>
             <ServicesHeader>
             <Title>Transações</Title>
-            </ServicesHeader>
-            
+            </ServicesHeader>            
         </ServicesContainer>
+        <Payment></Payment>
         </Container>
   );
 }
