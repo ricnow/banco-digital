@@ -55,6 +55,7 @@ const items = [
 
 export default function Suggestions() {
     return (
+        
         <Container>
             {items.map((item) =>(
                 <Option key={item.key}>

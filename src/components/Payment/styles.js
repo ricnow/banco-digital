@@ -8,8 +8,8 @@ export const Container = styled.ScrollView.attrs(() => ({
         paddingLeft: 16,
     },
 }))`
-    background: #1e222b;
-    height: 130px;
+    background: rgba(255,255,255,0.6);
+    height: 50px;
 `;
 
 export const Option  = styled.TouchableOpacity`
