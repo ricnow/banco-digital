@@ -17,12 +17,12 @@ export default function Pay() {
 
         <Container>
         <Header>
-            <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e"/>
+            <MaterialCommunityIcons name="qrcode-scan" size={20} color="#10c86e"/>
             <Input placeholder="Quem você quer pagar?" />
         </Header>
         <ServicesContainer>
             <ServicesHeader>
-            <Title>Serviços</Title>
+            <Title>Transações</Title>
             </ServicesHeader>
             
         </ServicesContainer>
