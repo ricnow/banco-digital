@@ -1,14 +1,15 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  background-color: #fff;
-  flex: 1;
-`;
 
 export const Wrapper = styled.SafeAreaView`
   background: #000;
   flex: 1;
 `
+
+export const Container = styled.View`
+  background-color: #fff;
+  flex: 1;
+`;
 
 export const Header = styled.View`
   height: 50px;
@@ -17,7 +18,8 @@ export const Header = styled.View`
   align-items:center;
   justify-content:space-between;
   margin-top: 50px;
-`
+  
+`;
 
 export const Input = styled.TextInput`
   background-color: rgba(255,255,255,0.8);
@@ -26,19 +28,21 @@ export const Input = styled.TextInput`
   width: 320px;
   padding: 2px 16px;
   color: #000;
-`
+`;
 
-export const ServicesContainer = styled.View`
+export const TransationContainer = styled.View`
   margin: 0 15px;
-`
+  
+`;
 
-export const ServicesHeader = styled.View`
+export const TransationHeader = styled.View`
   height: 30px;
   justify-content:flex-end;
-`
+  
+`;
 
-export const Title = styled.Text`
+export const TransationTitle = styled.Text`
   color: #000;
   font-size: 20px;
   font-weight: bold;
-`
+`;
