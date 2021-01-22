@@ -12,8 +12,8 @@ export const Container = styled.ScrollView.attrs(() => ({
 `;
 export const Option = styled.TouchableOpacity`
     
-    width: 150px;
-    height: 80px;
+    width: 100px;
+    height: 90px;
     border-radius: 8px;
     padding: 15px;
     justify-content: space-between;
@@ -23,7 +23,8 @@ export const Option = styled.TouchableOpacity`
     
 `;
 export const Label = styled.Text`
+    margin-top: 10px;
     color: #000;
-    font-size: 16px;
-    font-weight: bold;    
+    font-size: 14px;
+    
 `; 
