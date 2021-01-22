@@ -17,19 +17,19 @@ export default function Payment(){
         <Container>
             <Option>
                 <Ionicons name='person-circle-outline' size={15} color='#10c86e' />
-                <Title>Pagar Pessoas</Title>
+                <Label>Pagar Pessoas</Label>
             </Option>
             <Option>
                 <Ionicons name='ios-barcode-outline' size={15} color='#10c86e' />
-                <Title>Pagar Pessoas</Title>
+                <Label>Pagar Pessoas</Label>
             </Option>
             <Option>
                 <Fontisto name='shopping-pos-machine' size={15} color='#10c86e' />
-                <Title>Pagar Pessoas</Title>
+                <Label>Pagar Pessoas</Label>
             </Option>
             <Option>
                 <Ionicons name='person-circle-outline' size={15} color='#10c86e' />
-                <Title>Pagar Pessoas</Title>
+                <Label>Pagar Pessoas</Label>
             </Option>
         </Container>
     );

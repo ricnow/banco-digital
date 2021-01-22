@@ -35,7 +35,7 @@ export default function Pay() {
         </TransationContainer>
         <Payment />
         
-        <Banner />
+        
         
         </Container>
     </Wrapper>
