@@ -30,19 +30,19 @@ Entre as tecnologias utilizadas, destaca-se:
 
 
 
-### 💻 Installation
+# 💻 Installation
 
 
-# Clone o repositório
+### Clone o repositório
 ```bash
 $ git clone https://github.com/ricnow/banco-digital.git
 ```
-# Entre no diretório do Repositório
+### Entre no diretório do Repositório
 ```bash
 $ cd banco-digital
 ```
 
-# Installe as dependências
+### Instale as dependências
 ```bash
 $ npm install --global expo-cli
 ```
@@ -58,7 +58,7 @@ npm install @react-navigation/bottom-tabs
 ```
 
 
-# Android
+### Android
 ```bash
 $ npx react-native run-android
 ```
