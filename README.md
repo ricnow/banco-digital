@@ -17,7 +17,7 @@
     <img alt="gif" src="https://github.com/ricnow/banco-digital/blob/master/src/assets/funcionamento.gif" width="22%">
 </p>
 
-## 🚀 Tecnologias
+# 🚀 Tecnologias
 
 Entre as tecnologias utilizadas, destaca-se:
 
