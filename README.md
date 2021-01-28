@@ -14,7 +14,7 @@
 <p align="center">
   <img alt="Home" src="./src/assets/home.png" width="20%">
    <img alt="Wallet" src="./src/assets/wallet.png" width="20%">
-    <img alt="gif" src="https://github.com/ricnow/banco-digital/master/src/assets/funcionamento.gif" width="22%">
+    <img alt="gif" src="https://github.com/ricnow/banco-digital/blob/master/src/assets/funcionamento.gif" width="22%">
 </p>
 
 ## 🚀 Tecnologias
