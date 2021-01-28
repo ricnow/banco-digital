@@ -32,24 +32,35 @@ Entre as tecnologias utilizadas, destaca-se:
 
 ### 💻 Installation
 
-```bash
-# Clone o repositório
-$ git clone https://github.com/ricnow/banco-digital.git
 
-# Entre no diretporio do Repositório
+# Clone o repositório
+```bash
+$ git clone https://github.com/ricnow/banco-digital.git
+```
+# Entre no diretório do Repositório
+```bash
 $ cd banco-digital
+```
 
 # Installe as dependências
+```bash
 $ npm install --global expo-cli
+```
+```bash
 $ npm install @react-navigation/native
-$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+```bash
+$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context 
+@react-native-community/masked-view
+```
+```bash
 npm install @react-navigation/bottom-tabs
-
+```
 
 
 # Android
+```bash
 $ npx react-native run-android
-
 ```
 
 
